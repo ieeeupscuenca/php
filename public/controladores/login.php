@@ -19,7 +19,7 @@
 
     if ($row["login"] == 1) {
         $_SESSION['isLogged'] = TRUE;
-        print("hola mundo");
+        header("Location: ../../admin/vista/usuario/index.php");
     
     }else{
         header("Location: ../vista/login.html");
